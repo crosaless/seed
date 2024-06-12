@@ -1,4 +1,10 @@
-C:\proyectos\seed\src\test\java\com\seed\entidades\TestVentaInventario.java
-C:\proyectos\seed\src\test\java\com\seed\entidades\SumaTest.java
-C:\proyectos\seed\src\test\java\com\seed\entidades\TestDevolverMayor.java
-C:\proyectos\seed\src\test\java\com\seed\entidades\TestDisminuirStock.java
+E:\Documents\GitHub\seed\src\test\java\com\seed\entidades\TestDevolverMayor.java
+E:\Documents\GitHub\seed\src\test\java\com\seed\entidades\SumaTest.java
+E:\Documents\GitHub\seed\src\test\java\com\seed\entidades\TestDisminuirStock.java
+E:\Documents\GitHub\seed\src\test\java\com\seed\entidades\TestReposicionInventario.java
+E:\Documents\GitHub\seed\src\test\java\com\seed\entidades\TestPerdidaInventario.java
+E:\Documents\GitHub\seed\src\test\java\com\seed\entidades\TestVentaInventario.java
+E:\Documents\GitHub\seed\src\test\java\com\seed\entidades\TestIncrementoNroCliente.java
+E:\Documents\GitHub\seed\src\test\java\com\seed\entidades\TestSetNombreCliente.java
+E:\Documents\GitHub\seed\src\test\java\com\seed\entidades\TestCreacionInstanciaConDniClienteNegativo.java
+E:\Documents\GitHub\seed\src\test\java\com\seed\entidades\TestObtenerNroCliente.java
