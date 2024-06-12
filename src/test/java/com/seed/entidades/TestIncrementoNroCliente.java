@@ -22,7 +22,7 @@ public class TestIncrementoNroCliente {
         
         String nombreCliente2 = "Ana";
         String apellidoCliente2 = "García";
-        Date fechaNacimiento2 = new Date(1993, 3, 20); // 15 de junio de 1990
+        Date fechaNacimiento2 = new Date(1993, 3, 20); // 20 de marzo de 1993
         long dniCliente2 = 87654321;
         long nroCelular2 = 987654321;
         String emailCliente2 = "ana.garcia@example.com";

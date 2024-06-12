@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 /**
  *
- * @author Nacho
+ * @author Ignacio_Olcoz
  */
 public class TestCreacionInstanciaConDniClienteNegativo {
     @Test
