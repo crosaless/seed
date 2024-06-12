@@ -8,6 +8,6 @@ public class SumaTest {
     @Test
     public void testSuma(){
         Suma suma = new Suma();
-        assertEquals(105, suma.Suma(100,5));
+        assertEquals(105, suma.suma(100,5));
     }
 }
