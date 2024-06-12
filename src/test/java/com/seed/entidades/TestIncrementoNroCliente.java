@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  */
 public class TestIncrementoNroCliente {
     @Test
-    void testIncrementoNroCliente() {
+    public void testIncrementoNroCliente() {
         //Verificación de que los id o numeración de clientes se asignen correctamente al crear instancias.
         //Arrange
         String nombreCliente = "Juan";

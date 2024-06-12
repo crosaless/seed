@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  */
 public class TestObtenerNroCliente {
     @Test
-    void testGetNroCliente() {
+    public void testGetNroCliente() {
          //Arrange
         String nombreCliente = "Juan";
         String apellidoCliente = "Pérez";

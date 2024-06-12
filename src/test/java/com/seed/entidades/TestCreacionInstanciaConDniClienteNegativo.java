@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  */
 public class TestCreacionInstanciaConDniClienteNegativo {
     @Test
-    void testCreacionInstanciaConDniClienteNegativo(){
+    public void testCreacionInstanciaConDniClienteNegativo(){
         //Se verifica que no se pueda crear instancias de tipo Cliente con dniCliente con valor negativo.
         //Arrange
         String nombreCliente = "Juan";

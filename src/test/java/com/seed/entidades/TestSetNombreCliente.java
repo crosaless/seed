@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  */
 public class TestSetNombreCliente {
     @Test
-    void testSetNombreCliente() {
+    public void testSetNombreCliente() {
          //Arrange
         String nombreCliente = "Juan";
         String apellidoCliente = "Pérez";
