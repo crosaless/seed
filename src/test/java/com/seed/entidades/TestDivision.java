@@ -56,4 +56,12 @@ public class TestDivision {
         });
         assertEquals("El divisor no puede ser cero", exception.getMessage());
     }
+
+    @Test
+    public void testDividirConError() {
+        Division division = new Division();
+        double resultado = division.dividir(10, 2);
+        // Intencionalmente se espera un resultado incorrecto para provocar un fallo
+        assertEquals(6.0, resultado, 0.0001);
+    }
 }
