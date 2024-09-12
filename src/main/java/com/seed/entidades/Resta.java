@@ -8,8 +8,11 @@ public class Resta {
     /**
      * Resta dos números enteros.
      *
-     * @param a el minuendo.
-     * @param b el sustraendo.
+     * @param a
+     *            el minuendo.
+     * @param b
+     *            el sustraendo.
+     * 
      * @return el resultado de la resta.
      */
     public int restar(final int a, final int b) {

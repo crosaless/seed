@@ -3,6 +3,7 @@ package com.seed.entidades;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class TestResta {
 
     @Test
@@ -43,4 +44,3 @@ public class TestResta {
         assertEquals(-5, resultado);
     }
 }
-

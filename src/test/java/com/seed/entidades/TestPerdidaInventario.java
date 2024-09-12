@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 
 public class TestPerdidaInventario {
     @Test
-    public void testPerdidaInventario(){
-        Inventario i= new Inventario();
-        assertEquals(10,i.perdida(20, 30));
+    public void testPerdidaInventario() {
+        Inventario i = new Inventario();
+        assertEquals(10, i.perdida(20, 30));
     }
 
 }

@@ -23,7 +23,9 @@ final class Producto {
     /**
      * Disminuye el stock del producto.
      *
-     * @param cantidad Cantidad a disminuir.
+     * @param cantidad
+     *            Cantidad a disminuir.
+     * 
      * @return Stock actualizado.
      */
     public int disminuir(final int cantidad) {
@@ -34,7 +36,8 @@ final class Producto {
     /**
      * Establece el nombre del producto.
      *
-     * @param nuevoNombre Nombre del producto.
+     * @param nuevoNombre
+     *            Nombre del producto.
      */
     public void setNombreProducto(final String nuevoNombre) {
         this.nombreProducto = nuevoNombre;
@@ -58,4 +61,3 @@ final class Producto {
         return stock;
     }
 }
-

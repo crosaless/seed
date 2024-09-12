@@ -1,20 +1,24 @@
 package com.seed.entidades;
 
 /**
- * Esta clase calcula el porcentaje de una parte sobre el total.
- * Puede ser extendida para agregar más métodos relacionados con porcentajes.
+ * Esta clase calcula el porcentaje de una parte sobre el total. Puede ser extendida para agregar más métodos
+ * relacionados con porcentajes.
  */
 public final class Porcentaje {
 
-    /** Constante que representa el valor 100, usado en el
-     * cálculo de porcentajes. */
+    /**
+     * Constante que representa el valor 100, usado en el cálculo de porcentajes.
+     */
     private static final int CIEN = 100;
 
     /**
      * Calcula el porcentaje de la parte sobre el total.
      *
-     * @param parte el valor que representa la parte.
-     * @param total el valor total.
+     * @param parte
+     *            el valor que representa la parte.
+     * @param total
+     *            el valor total.
+     * 
      * @return el porcentaje que representa la parte sobre el total.
      */
     public double calcularPorcentaje(final double parte, final double total) {

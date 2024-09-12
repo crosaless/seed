@@ -3,8 +3,7 @@ package com.seed.entidades;
 import java.util.Date;
 
 /**
- * Esta clase representa un cliente en el sistema.
- * Incluye detalles como nombre, apellido, fecha de nacimiento, DNI,
+ * Esta clase representa un cliente en el sistema. Incluye detalles como nombre, apellido, fecha de nacimiento, DNI,
  * celular y correo electrónico. Cada cliente tiene un número único.
  */
 public final class Cliente {
@@ -36,22 +35,27 @@ public final class Cliente {
     /**
      * Constructor para la clase Cliente.
      *
-     * @param nombre El nombre del cliente.
-     * @param apellido El apellido del cliente.
-     * @param fechaNac La fecha de nacimiento del cliente.
-     * @param dni El DNI del cliente.
-     * @param celular El número de celular del cliente.
-     * @param email El correo electrónico del cliente.
-     * @throws IllegalArgumentException Si el DNI del cliente es negativo.
+     * @param nombre
+     *            El nombre del cliente.
+     * @param apellido
+     *            El apellido del cliente.
+     * @param fechaNac
+     *            La fecha de nacimiento del cliente.
+     * @param dni
+     *            El DNI del cliente.
+     * @param celular
+     *            El número de celular del cliente.
+     * @param email
+     *            El correo electrónico del cliente.
+     * 
+     * @throws IllegalArgumentException
+     *             Si el DNI del cliente es negativo.
      */
-    public Cliente(final String nombre, final String apellido,
-                   final Date fechaNac, final long dni,
-                   final long celular, final String email) {
+    public Cliente(final String nombre, final String apellido, final Date fechaNac, final long dni, final long celular,
+            final String email) {
 
         if (dni < 0) {
-            throw new IllegalArgumentException("El DNI del cliente no "
-                    +
-                    "puede tomar un valor negativo.");
+            throw new IllegalArgumentException("El DNI del cliente no " + "puede tomar un valor negativo.");
         }
 
         this.nroCliente = contador++;
@@ -91,7 +95,8 @@ public final class Cliente {
     /**
      * Establece el nombre del cliente.
      *
-     * @param nombre El nuevo nombre del cliente.
+     * @param nombre
+     *            El nuevo nombre del cliente.
      */
     public void setNombreCliente(final String nombre) {
         this.nombreCliente = nombre;
@@ -109,7 +114,8 @@ public final class Cliente {
     /**
      * Establece el apellido del cliente.
      *
-     * @param apellido El nuevo apellido del cliente.
+     * @param apellido
+     *            El nuevo apellido del cliente.
      */
     public void setApellidoCliente(final String apellido) {
         this.apellidoCliente = apellido;
@@ -127,7 +133,8 @@ public final class Cliente {
     /**
      * Establece la fecha de nacimiento del cliente.
      *
-     * @param fechaNac La nueva fecha de nacimiento del cliente.
+     * @param fechaNac
+     *            La nueva fecha de nacimiento del cliente.
      */
     public void setFechaNacimiento(final Date fechaNac) {
         this.fechaNacimiento = fechaNac;
@@ -145,14 +152,15 @@ public final class Cliente {
     /**
      * Establece el DNI del cliente.
      *
-     * @param dni El nuevo DNI del cliente.
-     * @throws IllegalArgumentException Si el DNI es negativo.
+     * @param dni
+     *            El nuevo DNI del cliente.
+     * 
+     * @throws IllegalArgumentException
+     *             Si el DNI es negativo.
      */
     public void setDniCliente(final long dni) {
         if (dni < 0) {
-            throw new IllegalArgumentException("El DNI del cliente no "
-                    +
-                    "puede tomar un valor negativo.");
+            throw new IllegalArgumentException("El DNI del cliente no " + "puede tomar un valor negativo.");
         }
         this.dniCliente = dni;
     }
@@ -169,7 +177,8 @@ public final class Cliente {
     /**
      * Establece el número de celular del cliente.
      *
-     * @param celular El nuevo número de celular del cliente.
+     * @param celular
+     *            El nuevo número de celular del cliente.
      */
     public void setNroCelular(final long celular) {
         this.nroCelular = celular;
@@ -187,7 +196,8 @@ public final class Cliente {
     /**
      * Establece el correo electrónico del cliente.
      *
-     * @param email El nuevo correo electrónico del cliente.
+     * @param email
+     *            El nuevo correo electrónico del cliente.
      */
     public void setEmailCliente(final String email) {
         this.emailCliente = email;
