@@ -8,6 +8,6 @@ public class TestVentaInventario {
     @Test
     public void testVentaInventario(){
         Inventario i = new Inventario();
-        assertEquals(20, i.Venta(20,40));
+        assertEquals(20, i.venta(20,40));
     }
 }

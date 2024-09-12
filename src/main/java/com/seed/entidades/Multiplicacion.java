@@ -2,7 +2,8 @@
 package com.seed.entidades;
 
 /**
- * Clase que realiza la operación de multiplicación de dos números de tipo doble.
+ * Clase que realiza la operación de multiplicación de dos números
+ * de tipo doble.
  */
 public final class Multiplicacion {
 

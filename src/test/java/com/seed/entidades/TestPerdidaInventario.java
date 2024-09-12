@@ -8,7 +8,7 @@ public class TestPerdidaInventario {
     @Test
     public void testPerdidaInventario(){
         Inventario i= new Inventario();
-        assertEquals(10,i.Perdida(20, 30));
+        assertEquals(10,i.perdida(20, 30));
     }
 
 }
