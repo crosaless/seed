@@ -30,13 +30,15 @@ jobs:
       - name: Correr tests unitarios
         run: mvn test
 
+      #verico que cumpla con el linter de java punto 3.c
+      - name: Ejecutar el linter de Maven
+        run: mvn checkstyle:check
+      
       #Verificamos el formato del codigo punto 3.d
       - name: vericar el formato del codigo
         run: mvn spotless:check
         #continue-on-error: false
 
-      #verico que cumpla con el linter de java punto 3.c
-      - name: Ejecutar el linter de Maven
-        run: mvn checkstyle:check
+
 
       #no tenemos pruebas de integracion punto 3.b
