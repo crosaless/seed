@@ -22,6 +22,10 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
+      #Build with Maven
+      - name: construir con maven
+        run: mvn -B package --file pom.xml
+
       #Verificamos el formato del codigo punto 3.d
       - name: vericar el formato del codigo
         run: mvn spotless:check
@@ -31,9 +35,7 @@ jobs:
       - name: Ejecutar el linter de Maven
         run: mvn checkstyle:check
 
-      #Build with Maven
-      - name: construir con maven
-        run: mvn -B package --file pom.xml
+
 
       #correr los test unitarios punto 3.a
       - name: Correr tests unitarios

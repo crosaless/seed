@@ -1,0 +1,4 @@
+#Thu Sep 12 11:42:53 ART 2024
+configuration*?=20D649049D3DB96DC8EC6C9EE919D6970921D932
+module-resource*?\:checkstyle-suppressions.xml=2F7B2E8873FCD93DC5D0DDA6C44CC099D024FCE
+module-resource*?\:checkstyle-xpath-suppressions.xml=F40F5A651BD8BC633D9A0FEBE253780D7F43EEE6
