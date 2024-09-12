@@ -25,7 +25,7 @@ jobs:
       #Verificamos el formato del codigo punto 3.d
       - name: vericar el formato del codigo
         run: mvn formatter.validate
-        continue-on-error: false
+        #continue-on-error: false
 
       #verico que cumpla con el linter de java punto 3.c
       - name: Ejecutar el linter de Maven
