@@ -1,23 +1,42 @@
 name: Java CI
 
-on: [push, pull_request]
+#aca definimos las situaciones en las que se ejecutara el pipeline
+on:
+  pull_request:
+    branches:
+      - develop
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      #chequeamos el repo
+      - name: Chequear repositorio
         uses: actions/checkout@v4.1.7          
 
+      #preparamos el entorno para java
       - name: Set up JDK 21
         uses: actions/setup-java@v4.2.1
         with:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Build with Maven
+      #Verificamos el formato del codigo punto 3.d
+      - name: vericar el formato del codigo
+        run: mvn formatter.validate
+        continue-on-error: false
+
+      #verico que cumpla con el linter de java punto 3.c
+      - name: Ejecutar el linter de Maven
+        run: mvn checkstyle:check
+
+      #Build with Maven
+      - name: construir con maven
         run: mvn -B package --file pom.xml
 
-      - name: Run tests
+      #correr los test unitarios punto 3.a
+      - name: Correr tests unitarios
         run: mvn test
+
+      #no tenemos pruebas de integracion punto 3.b
