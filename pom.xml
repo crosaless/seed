@@ -72,17 +72,19 @@
          <plugin>
             <groupId>com.diffplug.spotless</groupId>
             <artifactId>spotless-maven-plugin</artifactId>
-            <version>2.17.5</version> <!-- ajusta la versión según sea necesario -->
+            <version>2.17.5</version>
             <executions>
                 <execution>
                     <goals>
-                        <goal>check</goal> <!-- Verifica el formato del código -->
+                        <goal>check</goal>
                     </goals>
                 </execution>
             </executions>
             <configuration>
                 <java>
-                    <googleJavaFormat />
+                    <additionalJvmArgs>
+                        <arg>--add-exports=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED</arg>
+                    </additionalJvmArgs>
                 </java>
             </configuration>
         </plugin>
