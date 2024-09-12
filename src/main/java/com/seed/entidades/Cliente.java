@@ -4,7 +4,8 @@ import java.util.Date;
 
 /**
  * Esta clase representa un cliente en el sistema.
- * Incluye detalles como nombre, apellido, fecha de nacimiento, DNI, celular y correo electrónico.
+ * Incluye detalles como nombre, apellido, fecha de nacimiento, DNI,
+ * celular y correo electrónico.
  * Cada cliente tiene un número único.
  */
 public final class Cliente {
@@ -44,15 +45,16 @@ public final class Cliente {
      * @param emailCliente El correo electrónico del cliente.
      * @throws IllegalArgumentException Si el DNI del cliente es negativo.
      */
-    public Cliente(final String nombreCliente, final String apellidoCliente, final Date fechaNacimiento,
-                   final long dniCliente, final long nroCelular, final String emailCliente) {
+    public Cliente(final String nombreCliente, final String apellidoCliente,
+                   final Date fechaNacimiento, final long dniCliente,
+                   final long nroCelular, final String emailCliente) {
 
         if (dniCliente < 0) {
-            throw new IllegalArgumentException("El DNI del cliente no puede tomar un valor negativo.");
+            throw new IllegalArgumentException("El DNI del cliente no " +
+                    "puede tomar un valor negativo.");
         }
 
-        this.nroCliente = contador;
-        contador++;
+        this.nroCliente = contador++;
         this.nombreCliente = nombreCliente;
         this.apellidoCliente = apellidoCliente;
         this.fechaNacimiento = fechaNacimiento;
