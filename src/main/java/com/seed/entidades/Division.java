@@ -8,15 +8,11 @@ public class Division {
     /**
      * Divide dos números enteros.
      *
-     * @param a
-     *            el dividendo.
-     * @param b
-     *            el divisor. No puede ser cero.
-     * 
+     * @param a el dividendo.
+     * @param b el divisor. No puede ser cero.
      * @return el resultado de la división como un valor de tipo doble.
-     * 
      * @throws IllegalArgumentException
-     *             si el divisor es cero.
+     * si el divisor es cero.
      */
     public double dividir(final int a, final int b) {
         if (b == 0) {

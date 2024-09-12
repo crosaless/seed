@@ -3,7 +3,8 @@ package com.seed.entidades;
 import java.util.Date;
 
 /**
- * Esta clase representa un cliente en el sistema. Incluye detalles como nombre, apellido, fecha de nacimiento, DNI,
+ * Esta clase representa un cliente en el sistema.
+ * Incluye detalles como nombre, apellido, fecha de nacimiento, DNI,
  * celular y correo electrónico. Cada cliente tiene un número único.
  */
 public final class Cliente {
@@ -35,27 +36,25 @@ public final class Cliente {
     /**
      * Constructor para la clase Cliente.
      *
-     * @param nombre
-     *            El nombre del cliente.
-     * @param apellido
-     *            El apellido del cliente.
-     * @param fechaNac
-     *            La fecha de nacimiento del cliente.
-     * @param dni
-     *            El DNI del cliente.
-     * @param celular
-     *            El número de celular del cliente.
-     * @param email
-     *            El correo electrónico del cliente.
+     * @param nombre El nombre del cliente.
+     * @param apellido El apellido del cliente.
+     * @param fechaNac La fecha de nacimiento del cliente.
+     * @param dni El DNI del cliente.
+     * @param celular El número de celular del cliente.
+     * @param email El correo electrónico del cliente.
      * 
      * @throws IllegalArgumentException
      *             Si el DNI del cliente es negativo.
      */
-    public Cliente(final String nombre, final String apellido, final Date fechaNac, final long dni, final long celular,
-            final String email) {
+    public Cliente(final String nombre, final String apellido,
+                   final Date fechaNac,
+                   final long dni, final long celular,
+                   final String email) {
 
         if (dni < 0) {
-            throw new IllegalArgumentException("El DNI del cliente no " + "puede tomar un valor negativo.");
+            throw new IllegalArgumentException("El DNI del cliente no "
+                    +
+                    "puede tomar un valor negativo.");
         }
 
         this.nroCliente = contador++;
@@ -152,15 +151,15 @@ public final class Cliente {
     /**
      * Establece el DNI del cliente.
      *
-     * @param dni
-     *            El nuevo DNI del cliente.
+     * @param dni El nuevo DNI del cliente.
      * 
-     * @throws IllegalArgumentException
-     *             Si el DNI es negativo.
+     * @throws IllegalArgumentException Si el DNI es negativo.
      */
     public void setDniCliente(final long dni) {
         if (dni < 0) {
-            throw new IllegalArgumentException("El DNI del cliente no " + "puede tomar un valor negativo.");
+            throw new IllegalArgumentException("El DNI del cliente no "
+                    +
+                    "puede tomar un valor negativo.");
         }
         this.dniCliente = dni;
     }
