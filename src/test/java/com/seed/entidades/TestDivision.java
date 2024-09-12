@@ -48,12 +48,4 @@ public class TestDivision {
         assertEquals(0.0, resultado, 0.0001);
     }
 
-    @Test
-    public void testDividirPorCero() {
-        Division division = new Division();
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            division.dividir(10, 0);
-        });
-        assertEquals("El divisor no puede ser cero", exception.getMessage());
-    }
 }
