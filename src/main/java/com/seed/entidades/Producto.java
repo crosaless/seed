@@ -25,7 +25,7 @@ final class Producto {
      *
      * @param cantidad
      *            Cantidad a disminuir.
-     * 
+     *
      * @return Stock actualizado.
      */
     public int disminuir(final int cantidad) {
