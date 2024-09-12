@@ -12,14 +12,13 @@ public class TestResta {
         int resultado = resta.restar(10, 5);
         assertEquals(5, resultado);
     }
-    
+
     @Test
     public void testRestarPositivoYNegativo() {
         Resta resta = new Resta();
         int resultado = resta.restar(10, -5);
         assertEquals(15, resultado);
     }
-
 
     @Test
     public void testRestarConCero() {

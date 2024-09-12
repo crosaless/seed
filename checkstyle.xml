@@ -3,13 +3,18 @@
         "https://checkstyle.org/dtds/configuration_1_3.dtd">
 
 <module name="Checker">
+    <!-- Reglas generales que no dependen del análisis de la estructura del código -->
+    <module name="FileTabCharacter"/>
+    <module name="LineLength">
+        <property name="max" value="120"/>
+    </module>
+
+    <!-- Reglas que analizan el árbol sintáctico del código fuente -->
     <module name="TreeWalker">
-        <module name="FileTabCharacter"/>
-        <module name="LineLength">
-            <property name="max" value="120"/>
-        </module>
         <module name="WhitespaceAround"/>
         <module name="AvoidStarImport"/>
         <module name="UnusedImports"/>
     </module>
 </module>
+
+
