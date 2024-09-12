@@ -150,7 +150,9 @@ public final class Cliente {
      */
     public void setDniCliente(final long dni) {
         if (dni < 0) {
-            throw new IllegalArgumentException("El DNI del cliente no puede tomar un valor negativo.");
+            throw new IllegalArgumentException("El DNI del cliente no "
+                    +
+                    "puede tomar un valor negativo.");
         }
         this.dniCliente = dni;
     }
