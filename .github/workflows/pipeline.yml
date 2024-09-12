@@ -24,7 +24,7 @@ jobs:
 
       #Verificamos el formato del codigo punto 3.d
       - name: vericar el formato del codigo
-        run: mvn formatter.validate
+        run: mvn spotless:check
         #continue-on-error: false
 
       #verico que cumpla con el linter de java punto 3.c
