@@ -16,4 +16,3 @@ public final class Suma {
         return a + b;
     }
 }
-

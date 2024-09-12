@@ -22,7 +22,7 @@ final class Producto {
 
     /**
      * Disminuye el stock del producto.
-     * 
+     *
      * @param cantidad Cantidad a disminuir.
      * @return Stock actualizado.
      */
@@ -33,7 +33,7 @@ final class Producto {
 
     /**
      * Establece el nombre del producto.
-     * 
+     *
      * @param nombre Nombre del producto.
      */
     public void setNombre(final String nombre) {
@@ -42,7 +42,7 @@ final class Producto {
 
     /**
      * Obtiene el nombre del producto.
-     * 
+     *
      * @return El nombre del producto.
      */
     public String getNombre() {
@@ -51,7 +51,7 @@ final class Producto {
 
     /**
      * Obtiene el stock actual del producto.
-     * 
+     *
      * @return El stock actual.
      */
     public int getStock() {
