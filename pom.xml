@@ -98,7 +98,7 @@
                             <goal>check</goal>
                         </goals>
                         <configuration>
-                            <configLocation>checkstyle.xml</configLocation>
+                            <configLocation>sun_checks.xml</configLocation>
                             <failOnViolation>true</failOnViolation>
                         </configuration>
                     </execution>
