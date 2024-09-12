@@ -13,7 +13,7 @@ final class Producto {
     /**
      * Nombre del producto.
      */
-    private String nombre;
+    private String nombreProducto;
 
     /**
      * Stock inicial.
@@ -34,10 +34,10 @@ final class Producto {
     /**
      * Establece el nombre del producto.
      *
-     * @param nombre Nombre del producto.
+     * @param nombreProducto Nombre del producto.
      */
-    public void setNombre(final String nombre) {
-        this.nombre = nombre;
+    public void setNombreProducto(final String nombreProducto) {
+        this.nombreProducto = nombreProducto;
     }
 
     /**
@@ -45,8 +45,8 @@ final class Producto {
      *
      * @return El nombre del producto.
      */
-    public String getNombre() {
-        return nombre;
+    public String getNombreProducto() {
+        return nombreProducto;
     }
 
     /**
@@ -58,3 +58,4 @@ final class Producto {
         return stock;
     }
 }
+

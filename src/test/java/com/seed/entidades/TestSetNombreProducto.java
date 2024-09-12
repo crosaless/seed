@@ -10,8 +10,8 @@ public class TestSetNombreProducto {
     @Test
     public void testSetNombreProducto(){
         Producto producto=new Producto();
-        producto.setNombre("Heladera");
-        assertEquals("Heladera",producto.getNombre());
+        producto.setNombreProducto("Heladera");
+        assertEquals("Heladera",producto.getNombreProducto());
     }
 
 }
