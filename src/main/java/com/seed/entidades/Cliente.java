@@ -49,7 +49,8 @@ public final class Cliente {
                    final long celular, final String email) {
 
         if (dni < 0) {
-            throw new IllegalArgumentException("El DNI del cliente no " +
+            throw new IllegalArgumentException("El DNI del cliente no "
+                    +
                     "puede tomar un valor negativo.");
         }
 

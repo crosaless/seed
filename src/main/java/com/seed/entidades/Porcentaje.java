@@ -6,7 +6,8 @@ package com.seed.entidades;
  */
 public final class Porcentaje {
 
-    /** Constante que representa el valor 100, usado en el cálculo de porcentajes. */
+    /** Constante que representa el valor 100, usado en el
+     * cálculo de porcentajes. */
     private static final int CIEN = 100;
 
     /**

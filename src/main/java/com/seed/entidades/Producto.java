@@ -34,10 +34,10 @@ final class Producto {
     /**
      * Establece el nombre del producto.
      *
-     * @param nombreProducto Nombre del producto.
+     * @param nuevoNombre Nombre del producto.
      */
-    public void setNombreProducto(final String nombreProducto) {
-        this.nombreProducto = nombreProducto;
+    public void setNombreProducto(final String nuevoNombre) {
+        this.nombreProducto = nuevoNombre;
     }
 
     /**
