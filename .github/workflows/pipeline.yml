@@ -11,9 +11,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      
       #chequeamos el repo
       - name: Chequear repositorio
-        uses: actions/checkout@v4.1.7          
+        uses: actions/checkout@v4.1.7
+        with:
+          fetch-depth: 0  # Trae todo el historial del repo para asegurar que esté completo
 
       #preparamos el entorno para java
       - name: Set up JDK 11
