@@ -1,10 +1,10 @@
 name: Java CI
 
 #aca definimos las situaciones en las que se ejecutara el pipeline
-on:
-  pull_request:
-    branches:
-      - develop
+on: [push]
+  #pull_request:
+   # branches:
+    #  - develop
 
 jobs:
   build:
