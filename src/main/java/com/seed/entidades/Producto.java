@@ -1,17 +1,63 @@
 package com.seed.entidades;
 
-public class Producto {
-    public int stock = 60;
-    private String nombre;
-    public int disminuir(int a){
-        return stock= stock - a;
+/**
+ * Clase que representa un producto.
+ */
+final class Producto {
+
+    /**
+     * Stock del producto.
+     */
+    private int stock = INITIAL_STOCK;
+
+    /**
+     * Nombre del producto.
+     */
+    private String nombreProducto;
+
+    /**
+     * Stock inicial.
+     */
+    private static final int INITIAL_STOCK = 60;
+
+    /**
+     * Disminuye el stock del producto.
+     *
+     * @param cantidad
+     *            Cantidad a disminuir.
+     *
+     * @return Stock actualizado.
+     */
+    public int disminuir(final int cantidad) {
+        stock = stock - cantidad;
+        return stock;
     }
 
-    public void setNombre(String nombre){
-        this.nombre=nombre;
+    /**
+     * Establece el nombre del producto.
+     *
+     * @param nuevoNombre
+     *            Nombre del producto.
+     */
+    public void setNombreProducto(final String nuevoNombre) {
+        this.nombreProducto = nuevoNombre;
     }
-    
-    public String getNombre(){
-        return nombre;
+
+    /**
+     * Obtiene el nombre del producto.
+     *
+     * @return El nombre del producto.
+     */
+    public String getNombreProducto() {
+        return nombreProducto;
+    }
+
+    /**
+     * Obtiene el stock actual del producto.
+     *
+     * @return El stock actual.
+     */
+    public int getStock() {
+        return stock;
     }
 }

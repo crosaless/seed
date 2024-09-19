@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.3">
+<file name="C:\Users\Cristian\Desktop\seed\src\main\java\com\seed\entidades\Cliente.java">
+</file>
+<file name="C:\Users\Cristian\Desktop\seed\src\main\java\com\seed\entidades\Division.java">
+</file>
+<file name="C:\Users\Cristian\Desktop\seed\src\main\java\com\seed\entidades\Evaluador.java">
+</file>
+<file name="C:\Users\Cristian\Desktop\seed\src\main\java\com\seed\entidades\Inventario.java">
+</file>
+<file name="C:\Users\Cristian\Desktop\seed\src\main\java\com\seed\entidades\Multiplicacion.java">
+</file>
+<file name="C:\Users\Cristian\Desktop\seed\src\main\java\com\seed\entidades\package-info.java">
+</file>
+<file name="C:\Users\Cristian\Desktop\seed\src\main\java\com\seed\entidades\Porcentaje.java">
+</file>
+<file name="C:\Users\Cristian\Desktop\seed\src\main\java\com\seed\entidades\Producto.java">
+</file>
+<file name="C:\Users\Cristian\Desktop\seed\src\main\java\com\seed\entidades\Resta.java">
+</file>
+<file name="C:\Users\Cristian\Desktop\seed\src\main\java\com\seed\entidades\Suma.java">
+</file>
+</checkstyle>

@@ -1,1 +1,10 @@
+com\seed\entidades\Evaluador.class
+com\seed\entidades\Multiplicacion.class
+com\seed\entidades\Cliente.class
+com\seed\entidades\Porcentaje.class
+com\seed\entidades\package-info.class
+com\seed\entidades\Producto.class
 com\seed\entidades\Suma.class
+com\seed\entidades\Division.class
+com\seed\entidades\Resta.class
+com\seed\entidades\Inventario.class
