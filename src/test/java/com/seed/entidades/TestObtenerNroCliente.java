@@ -11,21 +11,21 @@ import org.junit.jupiter.api.Test;
 public class TestObtenerNroCliente {
     @Test
     public void testGetNroCliente() {
-         //Arrange
+        // Arrange
         String nombreCliente = "Juan";
         String apellidoCliente = "Pérez";
         Date fechaNacimiento = new Date(1990, 5, 15); // 15 de junio de 1990
         long dniCliente = 12345678;
         long nroCelular = 123456789;
         String emailCliente = "juan.perez@example.com";
-        
+
         Cliente cliente = new Cliente("Juan", "Pérez", new Date(), 40123567L, 2611234567L, "juan.perez@example.com");
-        
-        //Act
+
+        // Act
         int nroClienteObtenido = cliente.getNroCliente();
         Cliente.setContadorCero();
-        //Assert
+        // Assert
         assertEquals(1, nroClienteObtenido);
-        
+
     }
 }

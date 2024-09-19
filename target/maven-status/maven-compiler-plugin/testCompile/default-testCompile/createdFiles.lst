@@ -1,1 +1,15 @@
+com\seed\entidades\TestSetNombreProducto.class
+com\seed\entidades\TestPerdidaInventario.class
+com\seed\entidades\TestCreacionInstanciaConDniClienteNegativo.class
+com\seed\entidades\TestPorcentaje.class
+com\seed\entidades\TestIncrementoNroCliente.class
+com\seed\entidades\TestVentaInventario.class
+com\seed\entidades\TestSetNombreCliente.class
 com\seed\entidades\SumaTest.class
+com\seed\entidades\TestDivision.class
+com\seed\entidades\TestDevolverMayor.class
+com\seed\entidades\TestObtenerNroCliente.class
+com\seed\entidades\TestMultiplicacion.class
+com\seed\entidades\TestResta.class
+com\seed\entidades\TestDisminuirStock.class
+com\seed\entidades\TestReposicionInventario.class

@@ -1,17 +1,46 @@
 package com.seed.entidades;
 
-public class Inventario {
+/**
+ * Clase que gestiona el inventario de productos.
+ */
+public final class Inventario {
 
-    public int Venta(int cantVendida, int cantActual){
-        return cantActual = cantActual -cantVendida;
-    } 
+    /**
+     * Registra una venta en el inventario.
+     *
+     * @param cantVendida Cantidad vendida.
+     * @param cantActual  Cantidad actual en inventario.
+     * @return La cantidad actualizada después de la venta.
+     */
+    public int venta(final int cantVendida, final int cantActual) {
+        return cantActual - cantVendida;
+    }
 
-    public int Reposicion(int cantRepuesta, int cantActual){
-        return cantActual = cantActual + cantRepuesta;
-    } 
+    /**
+     * Registra una reposición en el inventario.
+     *
+     * @param cantRepuesta
+     *            Cantidad repuesta.
+     * @param cantActual
+     *            Cantidad actual en inventario.
+     * 
+     * @return La cantidad actualizada después de la reposición.
+     */
+    public int reposicion(final int cantRepuesta, final int cantActual) {
+        return cantActual + cantRepuesta;
+    }
 
-    public int Perdida(int cantPerdida, int cantActual){
-        return cantActual = cantActual - cantPerdida;
+    /**
+     * Registra una pérdida en el inventario.
+     *
+     * @param cantPerdida
+     *            Cantidad perdida.
+     * @param cantActual
+     *            Cantidad actual en inventario.
+     * 
+     * @return La cantidad actualizada después de la pérdida.
+     */
+    public int perdida(final int cantPerdida, final int cantActual) {
+        return cantActual - cantPerdida;
     }
 }
-    
