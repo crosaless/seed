@@ -9,7 +9,7 @@ public class ClienteService {
         this.clienteRepository = clienteRepository;
     }
 
-    // Método para agregar un cliente
+    // Metodo para agregar un cliente
     public void agregarCliente(Cliente cliente) {
         if (!clienteRepository.existeCliente(cliente.getNroCliente())) {
             clienteRepository.agregarCliente(cliente);
@@ -18,12 +18,12 @@ public class ClienteService {
         }
     }
 
-    // Método para obtener un cliente por su ID
+    // Metodo para obtener un cliente por su ID
     public Cliente obtenerCliente(int nroCliente) {
         return clienteRepository.obtenerCliente(nroCliente);
     }
 
-    // Método para eliminar un cliente por su ID
+    // Metodo para eliminar un cliente por su ID
     public void eliminarCliente(int nroCliente) {
         clienteRepository.eliminarCliente(nroCliente);
     }
