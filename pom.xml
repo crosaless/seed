@@ -58,6 +58,21 @@
                 <version>3.0.0-M7</version>
             </plugin>
 
+            <!-- Plugin para pruebas de integración -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
             <!-- Plugin para formatear el código -->
             <plugin>
                 <groupId>net.revelc.code.formatter</groupId>
