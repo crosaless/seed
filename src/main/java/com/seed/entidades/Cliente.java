@@ -3,7 +3,7 @@ package com.seed.entidades;
 import java.util.Calendar;
 
 /**
- * Esta clase representa un cliente en el sistema.
+ * Esta clase representa un cliente  en el sistema.
  * Incluye detalles como nombre, apellido, fecha de nacimiento, DNI,
  * celular y correo electrónico. Cada cliente tiene un número único.
  */
