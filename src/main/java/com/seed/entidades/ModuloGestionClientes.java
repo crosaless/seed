@@ -1,6 +1,6 @@
 package com.seed.entidades;
 
-import java.util.Date;
+import java.util.Calendar;
 
 /**
  * Clase para gestionar operaciones relacionadas con clientes.
@@ -28,7 +28,7 @@ public class ModuloGestionClientes {
      * @param nroCelular el número de celular del cliente
      * @param email el correo electrónico del cliente
      */
-    public void agregarCliente(String nombre, String apellido, Date fechaNacimiento, long dni, long nroCelular, String email) {
+    public void agregarCliente(String nombre, String apellido, Calendar fechaNacimiento, long dni, long nroCelular, String email) {
         Cliente cliente = new Cliente(nombre, apellido, fechaNacimiento, dni, nroCelular, email);
         clienteService.agregarCliente(cliente);
     }
