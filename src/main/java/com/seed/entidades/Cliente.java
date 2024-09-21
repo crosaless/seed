@@ -1,6 +1,6 @@
 package com.seed.entidades;
 
-import java.util.Date;
+import java.util.Calendar;
 
 /**
  * Esta clase representa un cliente en el sistema.
@@ -19,7 +19,7 @@ public final class Cliente {
     private String apellidoCliente;
 
     /** Fecha de nacimiento del cliente. */
-    private Date fechaNacimiento;
+    private Calendar fechaNacimiento;
 
     /** DNI del cliente. */
     private long dniCliente;
@@ -42,19 +42,18 @@ public final class Cliente {
      * @param dni El DNI del cliente.
      * @param celular El número de celular del cliente.
      * @param email El correo electrónico del cliente.
-     * 
+     *
      * @throws IllegalArgumentException
      *             Si el DNI del cliente es negativo.
      */
     public Cliente(final String nombre, final String apellido,
-                   final Date fechaNac,
+                   final Calendar fechaNac,
                    final long dni, final long celular,
                    final String email) {
 
         if (dni < 0) {
             throw new IllegalArgumentException("El DNI del cliente no "
-                    +
-                    "puede tomar un valor negativo.");
+                    + "puede tomar un valor negativo.");
         }
 
         this.nroCliente = contador++;
@@ -125,7 +124,7 @@ public final class Cliente {
      *
      * @return La fecha de nacimiento del cliente.
      */
-    public Date getFechaNacimiento() {
+    public Calendar getFechaNacimiento() {
         return fechaNacimiento;
     }
 
@@ -135,7 +134,7 @@ public final class Cliente {
      * @param fechaNac
      *            La nueva fecha de nacimiento del cliente.
      */
-    public void setFechaNacimiento(final Date fechaNac) {
+    public void setFechaNacimiento(final Calendar fechaNac) {
         this.fechaNacimiento = fechaNac;
     }
 
@@ -152,14 +151,13 @@ public final class Cliente {
      * Establece el DNI del cliente.
      *
      * @param dni El nuevo DNI del cliente.
-     * 
+     *
      * @throws IllegalArgumentException Si el DNI es negativo.
      */
     public void setDniCliente(final long dni) {
         if (dni < 0) {
             throw new IllegalArgumentException("El DNI del cliente no "
-                    +
-                    "puede tomar un valor negativo.");
+                    + "puede tomar un valor negativo.");
         }
         this.dniCliente = dni;
     }
