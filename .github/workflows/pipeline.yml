@@ -1,46 +1,47 @@
-name: Java CI
+name: Java CI/CD Pipeline
 
-# Definimos cuándo se ejecutará el pipeline
+# Definimos cuándo se ejecutará el pipeline (al hacer PR a main, develop o staging)
 on:
   pull_request:
     branches:
+      - main
       - develop
+      - staging
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-
       # Chequear el repositorio
-      - name: Chequear repositorio
+      - name: Chequear el repositorio
         uses: actions/checkout@v4.1.7
         with:
-          fetch-depth: 0  # Trae todo el historial del repo para asegurar que esté completo
+          fetch-depth: 0  # Asegura que el historial completo del repo esté disponible
 
-      # Preparar entorno para Java
-      - name: Set up JDK 11
+      # Configurar el entorno Java
+      - name: Configurar JDK 11
         uses: actions/setup-java@v4.2.1
         with:
           java-version: '11'
           distribution: 'temurin'
 
       # Compilar el proyecto con Maven
-      - name: Construir con Maven
+      - name: Construir el proyecto con Maven
         run: mvn -B package --file pom.xml
 
-      # Correr tests unitarios
-      - name: Correr tests unitarios
+      # Correr pruebas unitarias
+      - name: Correr pruebas unitarias
         run: mvn test
 
-      # Correr pruebas de integración (Failsafe) punto 3.b
+      # Correr pruebas de integración (Failsafe)
       - name: Correr pruebas de integración
         run: mvn failsafe:integration-test failsafe:verify
 
-      # Verificar que el código sigue las buenas prácticas (linter)
+      # Verificar el estilo de código con Checkstyle
       - name: Ejecutar el linter de Maven
         run: mvn checkstyle:check
 
-      # Verificar el formato del código
+      # Verificar el formato del código con Spotless
       - name: Verificar el formato del código
         run: mvn spotless:check
