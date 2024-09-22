@@ -1,6 +1,10 @@
-# seed
-TP 4: 
-Materia: ingenieria y calidad de software
+# TP 7 Plan de mantenimiento y desarrollo
+Materia: Ingeniería y calidad de software
+
+4K9
+
+2024
+
 # Grupo 5
 Arce Alejandro
 
