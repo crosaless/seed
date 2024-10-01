@@ -21,12 +21,12 @@ public class ModuloGestionClientes {
     /**
      * Agrega un cliente.
      *
-     * @param nombre el nombre del cliente
-     * @param apellido el apellido del cliente
+     * @param nombre          el nombre del cliente
+     * @param apellido        el apellido del cliente
      * @param fechaNacimiento la fecha de nacimiento del cliente
-     * @param dni el DNI del cliente
-     * @param nroCelular el número de celular del cliente
-     * @param email el correo electrónico del cliente
+     * @param dni             el DNI del cliente
+     * @param nroCelular      el número de celular del cliente
+     * @param email           el correo electrónico del cliente
      */
     public void agregarCliente(String nombre, String apellido, Calendar fechaNacimiento, long dni, long nroCelular, String email) {
         Cliente cliente = new Cliente(nombre, apellido, fechaNacimiento, dni, nroCelular, email);

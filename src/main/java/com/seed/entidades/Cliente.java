@@ -9,42 +9,56 @@ import java.util.Calendar;
  */
 public final class Cliente {
 
-    /** Número de cliente, asignado de manera incremental. */
+    /**
+     * Número de cliente, asignado de manera incremental.
+     */
     private int nroCliente;
 
-    /** Nombre del cliente. */
+    /**
+     * Nombre del cliente.
+     */
     private String nombreCliente;
 
-    /** Apellido del cliente. */
+    /**
+     * Apellido del cliente.
+     */
     private String apellidoCliente;
 
-    /** Fecha de nacimiento del cliente. */
+    /**
+     * Fecha de nacimiento del cliente.
+     */
     private Calendar fechaNacimiento;
 
-    /** DNI del cliente. */
+    /**
+     * DNI del cliente.
+     */
     private long dniCliente;
 
-    /** Número de celular del cliente. */
+    /**
+     * Número de celular del cliente.
+     */
     private long nroCelular;
 
-    /** Correo electrónico del cliente. */
+    /**
+     * Correo electrónico del cliente.
+     */
     private String emailCliente;
 
-    /** Contador estático que genera números de cliente únicos. */
+    /**
+     * Contador estático que genera números de cliente únicos.
+     */
     private static int contador = 1;
 
     /**
      * Constructor para la clase Cliente.
      *
-     * @param nombre El nombre del cliente.
+     * @param nombre   El nombre del cliente.
      * @param apellido El apellido del cliente.
      * @param fechaNac La fecha de nacimiento del cliente.
-     * @param dni El DNI del cliente.
-     * @param celular El número de celular del cliente.
-     * @param email El correo electrónico del cliente.
-     *
-     * @throws IllegalArgumentException
-     *             Si el DNI del cliente es negativo.
+     * @param dni      El DNI del cliente.
+     * @param celular  El número de celular del cliente.
+     * @param email    El correo electrónico del cliente.
+     * @throws IllegalArgumentException Si el DNI del cliente es negativo.
      */
     public Cliente(final String nombre, final String apellido,
                    final Calendar fechaNac,
@@ -93,8 +107,7 @@ public final class Cliente {
     /**
      * Establece el nombre del cliente.
      *
-     * @param nombre
-     *            El nuevo nombre del cliente.
+     * @param nombre El nuevo nombre del cliente.
      */
     public void setNombreCliente(final String nombre) {
         this.nombreCliente = nombre;
@@ -112,8 +125,7 @@ public final class Cliente {
     /**
      * Establece el apellido del cliente.
      *
-     * @param apellido
-     *            El nuevo apellido del cliente.
+     * @param apellido El nuevo apellido del cliente.
      */
     public void setApellidoCliente(final String apellido) {
         this.apellidoCliente = apellido;
@@ -131,8 +143,7 @@ public final class Cliente {
     /**
      * Establece la fecha de nacimiento del cliente.
      *
-     * @param fechaNac
-     *            La nueva fecha de nacimiento del cliente.
+     * @param fechaNac La nueva fecha de nacimiento del cliente.
      */
     public void setFechaNacimiento(final Calendar fechaNac) {
         this.fechaNacimiento = fechaNac;
@@ -151,7 +162,6 @@ public final class Cliente {
      * Establece el DNI del cliente.
      *
      * @param dni El nuevo DNI del cliente.
-     *
      * @throws IllegalArgumentException Si el DNI es negativo.
      */
     public void setDniCliente(final long dni) {
@@ -174,8 +184,7 @@ public final class Cliente {
     /**
      * Establece el número de celular del cliente.
      *
-     * @param celular
-     *            El nuevo número de celular del cliente.
+     * @param celular El nuevo número de celular del cliente.
      */
     public void setNroCelular(final long celular) {
         this.nroCelular = celular;
@@ -193,8 +202,7 @@ public final class Cliente {
     /**
      * Establece el correo electrónico del cliente.
      *
-     * @param email
-     *            El nuevo correo electrónico del cliente.
+     * @param email El nuevo correo electrónico del cliente.
      */
     public void setEmailCliente(final String email) {
         this.emailCliente = email;
