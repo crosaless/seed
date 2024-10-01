@@ -73,35 +73,27 @@
                 </executions>
             </plugin>
 
-            <!-- Plugin para formatear el código -->
-            <plugin>
-                <groupId>net.revelc.code.formatter</groupId>
-                <artifactId>formatter-maven-plugin</artifactId>
-                <version>2.17.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>format</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <!-- Plugin Spotless para verificar formato del código -->
+            <!-- Plugin para formatear el código (Spotless) -->
             <plugin>
                 <groupId>com.diffplug.spotless</groupId>
                 <artifactId>spotless-maven-plugin</artifactId>
                 <version>2.17.5</version>
+                <configuration>
+                    <java>
+                        <googleJavaFormat/>
+                    </java>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
                             <goal>check</goal>
+                            <goal>apply</goal> <!-- Este objetivo permite aplicar el formato automáticamente -->
                         </goals>
                     </execution>
                 </executions>
             </plugin>
 
-            <!-- Plugin de Checkstyle para aplicar el linter de Java -->
+            <!-- Plugin de Checkstyle para aplicar la guía de Google -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
@@ -113,7 +105,7 @@
                             <goal>check</goal>
                         </goals>
                         <configuration>
-                            <configLocation>sun_checks.xml</configLocation>
+                            <configLocation>google_checks.xml</configLocation>
                             <failOnViolation>true</failOnViolation>
                         </configuration>
                     </execution>
